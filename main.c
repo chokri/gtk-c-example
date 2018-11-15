@@ -1,3 +1,7 @@
+/**
+* This is an example GTK to create an empty window
+*/
+
 #include <stdio.h>
 #include <gtk/gtk.h>
 
