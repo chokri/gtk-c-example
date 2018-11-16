@@ -8,7 +8,7 @@ before_install:
 
 script:
   - make
-  - xvfb-run -a ./main -w 1
+  - xvfb-run -a -w 1./main 
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
