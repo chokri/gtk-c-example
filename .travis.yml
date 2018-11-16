@@ -12,7 +12,9 @@ before_install:
 
 script:
   - make
-#  - xvfb-run -a -w 1 ./main
+  - clang -coverage -O0 main.c -o main
+  - ./main
+  - gcov main.c
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
