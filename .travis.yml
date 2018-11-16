@@ -1,3 +1,7 @@
+env:
+  global:
+    - CODECOV_TOKEN="7d49808f-3f5f-4652-a38a-6eff26aa92e4"
+
 language: c
 sudo: false # only for faster builds
 
