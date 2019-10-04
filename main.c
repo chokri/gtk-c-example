@@ -28,7 +28,7 @@ static void activate (GtkApplication* app, gpointer user_data){
 
   gtk_container_add(GTK_CONTAINER(window), box);
 
-  gtk_window_set_title (GTK_WINDOW (window), "Window");
+  gtk_window_set_title (GTK_WINDOW (window), "Hacktoberfest 2019");
   gtk_window_set_default_size (GTK_WINDOW (window), 800, 600);
   gtk_widget_show_all (window);
 
