@@ -15,13 +15,14 @@ static void activate (GtkApplication* app, gpointer user_data){
   window = gtk_application_window_new (app);
   box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 5);
   image = gtk_image_new_from_file("pumpkin.png");   
-  label = gtk_label_new("Hacktoberfest");
+  label = gtk_label_new("Hacktoberfest!");
   gtk_label_set_justify(GTK_LABEL(label), GTK_JUSTIFY_CENTER);
+  gtk_widget_modify_font(label, pango_font_description_from_string("Tahoma 25")); 
   gtk_box_pack_start (GTK_BOX (box), label, TRUE, TRUE, 0);
   gtk_box_pack_start (GTK_BOX (box), image, FALSE, FALSE, 0);
   gtk_container_add(GTK_CONTAINER(window), box);
   gtk_window_set_title (GTK_WINDOW (window), "Hacktoberfest 2019");
-  gtk_window_set_default_size (GTK_WINDOW (window), 800, 600);
+  gtk_window_set_default_size (GTK_WINDOW (window), 400, 400);
   gtk_widget_show_all (window);
 
 }
