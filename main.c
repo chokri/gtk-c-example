@@ -37,3 +37,7 @@ int main (int argc, char **argv) {
 
   return status;
 }
+
+/**
+ * We should add a button and when I click on it it will fire an action
+ */
